@@ -1,0 +1,205 @@
+
+:root {
+    --vermelho: #ff3035;
+    --cinza: #f2f2f2;
+    --branco: #ffffff;
+    --preto: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* CONTAINER PRINCIPAL */
+
+main {
+    width: calc(100% - 80px);
+    max-width: 1424px;
+    min-height: 840px;
+    background-color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* PAINEL VERMELHO */
+
+.painel-boas-vindas {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 55px 64px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 2;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+.marca h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.conteudo-boas-vindas {
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 2;
+}
+
+.conteudo-boas-vindas h1 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 26px;
+}
+
+.conteudo-boas-vindas p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.painel-boas-vindas footer {
+    font-size: 20px;
+    z-index: 2;
+}
+
+
+.painel-login {
+    background-color: var(--branco);
+    padding: 100px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-entrar-com {
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.icones-redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.icones-redes-sociais a {
+    border: 2px solid #e5e5e5;
+    width: 170px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.icones-redes-sociais a:last-child {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+    color: var(--branco);
+}
+
+.icones-redes-sociais a:hover {
+    transform: scale(1.05);
+}
+
+.texto-usar-conta {
+    font-size: 20px;
+    color: #777777;
+    margin: 26px 0 22px;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.formulario-login input {
+    width: 100%;
+    height: 76px;
+    border: none;
+    background-color: var(--cinza);
+    padding: 0 25px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.formulario-login input::placeholder {
+    color: #999999;
+}
+
+.formulario-login input:focus {
+    outline: 2px solid var(--vermelho);
+}
+
+.texto-esqueci-senha {
+    font-size: 22px;
+    text-align: right;
+    margin: 18px;
+}
+
+.logar {
+    width: 100%;
+    height: 76px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logar:hover {
+    background-color: #d91e25;
+}
+
+.cadastre-se {
+    margin-top: 28px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.cadastre-se a {
+    font-weight: 800;
+}
+
